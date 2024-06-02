@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media, Formulario y HTML Semantico</title>
+</head>
+<body>
+    <h1>Media</h1>
+    <video controls>
+  <source src="https://www.w3schools.com/html/movie.mp4" type= "video/mp4">
+  <source src="https://www.w3schools.com/html/movie.ogg" type= "video/mp4"> 
+</video>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/it1rTvBcfRg?si=bsyvN2SSH49O6ZJO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</video>
+<h2>Audio</h2>
+    
+        <audio controls loop>
+            <source src = "media/exampleaudio.mp3" type="audio/mp3">
+        </audio>
+        <h2>Formularios</h2>
+        <form action="media.html" method = "GET">
+            <label for= "txtNombre"> Nombre:</label>
+            <input name="txtNombre " type="text" placeholder="Nombre Completo "/>
+
+            <label for= "txtEmail">Correo:</label>
+            <input  required id= "email "name="txtEmail " type="email" placeholder="Correo"/>
+
+            <label for= "txtPassword">Contraseña:</label>
+            <input id= "Password "name="txtPassword " type="Password" 
+            title="8 letras, 1 mayuscula, 1 Numero y un caracter especial" placeholder="Contraseña"
+            pattern="/^(?=.*\d)(?=.*[A-Z])(?=.*[a-z])(?=.*[^\w\d\s:])([^\s]){8,16}$/gm" />
+
+            <button name="btnEnviar" type="submit ">Enviar</button> 
+            <button name="btnLimpiar" type="reset ">Limpiar</button>
+            <button name="btnX" type="button ">Un Boton</button>
+
+            <label> Tema</label>
+            <div>
+                <input name="opcTema" value="Dark" id="opcDark" type="radio" />
+                <label for="opcDark">Dark</label>
+                <input name=" opcTema1" value="Dark" id="opcDark" type="radio" />
+                <label for="opcLight">Light</label>
+                <input name="opcTema2" value="Dark" id="opcDark" type="radio" />
+                <label for="opcOS">Defined by OS</label>
+
+            </div>
+        
+        <fieldset>
+            <legend>Opciones</legend>
+            <label for=" chkShareToFriends">Compartir Con Amigos</label>
+            <input type="checkbox" value="1" name="shareWithFriends"/>
+            <br/>
+            <label for=" chkShareWithStarngers">Compartir Con Extraños</label>
+            <input type="checkbox" value="1" name="shareWithStrangers"/>
+            <br/>
+            <label for=" chkShareToACL">Compartir Con Lista de Acceso</label>
+            <input type="checkbox" value="1" name="shareWithACL"/>
+            <br/>
+        </fieldset>
+        <label for "cmbCiudad">
+            <select id="cmbCiudad" name = "ciudad">
+                <option value="1 "selected>Tegucigalpa</option>
+                <option value="2 ">Danli</option>
+                <option value="3 ">San Pedro Sula</option>
+                <option value="4 ">Choluteca</option>
+                <option value="5 ">Juticalpa</option>
+                <option value="6 ">Santa Rosa de Copan</option>
+                <option value="7 ">Siguatepeque</option>
+                <option value="8 ">La Ceiba</option>
+                <option value="9 ">Trujillo</option>
+
+            </select>
+        </label>
+        <label for = "txtBlog">Entrada de Blog</label><br/>
+        <textarea id="txtBlog" name="Blog" placeholdeder="Escribir un Blog " cols="80" rows="10">
+        </textarea>
+        <br/>
+
+        </form>
+</body>
+</html>
