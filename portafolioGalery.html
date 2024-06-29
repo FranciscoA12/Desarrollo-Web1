@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Intro a Css</title>
     <link rel="stylesheet" href="css/primercss.css">
+    <link rel="stylesheet" href="css/grid.css">
 </head>
 
 <body>
@@ -23,46 +24,102 @@
         </nav>
     </header>
     <main>
-        <h2>Portafolio</h2>
         <section class="hero">
             <picture>
-                <source srcset="https://picsum.photos/id/237/1024/300" media="(min-width: 1025px)">
+                <source srcset="https://picsum.photos/id/237/1024/400" media="(min-width: 1025px)">
                 <source srcset="https://picsum.photos/id/237/400/300" media="(min-width: 380px)">
                 <img src="https://picsum.photos/id/237/300/300" alt="Hero">
             </picture>
             <span class="hero-content">
-                <h2>Algun texto a mostrar</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, aperiam rerum quis laudantium at quaerat.</p>
+                <h2>Portafolio</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, aperiam rerum quis laudantium at
+                    quaerat.</p>
                 <form action="portafolioGalery.html" method="get">
                     <button>Ver mas</button>
                 </form>
             </span>
         </section>
-        <h2>Precios</h2>
-        <section class="precios">
-            <div class="card">
-                <h3>Precio A</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic officiis voluptas quia harum saepe culpa, similique placeat aperiam distinctio ea repellendus reprehenderit maiores veritatis magni fuga quas error necessitatibus reiciendis. A</p>
-                <span>100.00</span>
-                <form>
-                    <button> Subscribe </button>
-                </form>
+        <section class="grid">
+            <div class="row" >
+                <div class="col-12">
+                    <picture>
+                        <source srcset="https://picsum.photos/id/250/1024/400" media="(min-width: 1025px)">
+                        <source srcset="https://picsum.photos/id/250/400/300" media="(min-width: 380px)">
+                        <img src="https://picsum.photos/id/250/300/300" alt="Hero">
+                    </picture>
+                </div>
+                <div class="col-12">Texto</div>
+            </div >
+            <div class="row">
+                <div class="col-12">
+                    <picture>
+                        <source srcset="https://picsum.photos/id/360/1024/400" media="(min-width: 1025px)">
+                        <source srcset="https://picsum.photos/id/360/400/300" media="(min-width: 380px)">
+                        <img src="https://picsum.photos/id/360/300/300" alt="Hero">
+                    </picture>
+                </div>
+                <div class="col-12">Texto</div>
+            </div >
+        </section>
+        <section class="container">
+            <h2>Precios</h2>
+            <section class="precios">
+                <div class="card">
+                    <h3>Precio A</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic officiis voluptas quia harum saepe
+                        culpa, similique placeat aperiam distinctio ea repellendus reprehenderit maiores veritatis magni
+                        fuga quas error necessitatibus reiciendis. A</p>
+                    <span>100.00</span>
+                    <form>
+                        <button> Subscribe </button>
+                    </form>
+                </div>
+                <div class="card">
+                    <h3>Precio C</h3>
+                    <p>Small Description C</p>
+                    <span>150.00</span>
+                    <form>
+                        <button> Subscribe </button>
+                    </form>
+                </div>
+                <div class="card">
+                    <h3>Precio B</h3>
+                    <p>Small Description B</p>
+                    <span>200.00</span>
+                    <form>
+                        <button> Subscribe </button>
+                    </form>
+                </div>
+            </section>
+        </section>
+        <section class="grid">
+            <div class="row">
+                <div class="col-6 col-m-3 col-l-1">1</div>
+                <div class="col-6 col-m-3 col-l-1">1</div>
+                <div class="col-6 col-m-3 col-l-1">1</div>
+                <div class="col-6 col-m-3 col-l-1">1</div>
+                <div class="col-6 col-m-3 col-l-1">1</div>
+                <div class="col-6 col-m-3 col-l-1">1</div>
+                <div class="col-6 col-m-3 col-l-1">1</div>
+                <div class="col-6 col-m-3 col-l-1">1</div>
+                <div class="col-6 col-m-3 col-l-1">1</div>
+                <div class="col-6 col-m-3 col-l-1">1</div>
+                <div class="col-6 col-m-3 col-l-1">1</div>
+                <div class="col-6 col-m-3 col-l-1">1</div>
             </div>
-            <div class="card">
-                <h3>Precio C</h3>
-                <p>Small Description C</p>
-                <span>150.00</span>
-                <form>
-                    <button> Subscribe </button>
-                </form>
+            <div class="row">
+                <div class="col-2">2</div>
+                <div class="col-2">2</div>
+                <div class="col-2">2</div>
+                <div class="col-2">2</div>
+                <div class="col-2">2</div>
+                <div class="col-2">2</div>
             </div>
-            <div class="card">
-                <h3>Precio B</h3>
-                <p>Small Description B</p>
-                <span>200.00</span>
-                <form>
-                    <button> Subscribe </button>
-                </form>
+            <div class="row">
+                <div class="col-3">3</div>
+                <div class="col-3">3</div>
+                <div class="col-3">3</div>
+                <div class="col-3">3</div>
             </div>
         </section>
     </main>
@@ -72,6 +129,7 @@
             <p>2021</p>
         </span>
         <span class="footer-nav">
+            <p>Menu</p>
             <nav>
                 <ul>
                     <li><a href="#">Home</a></li>
